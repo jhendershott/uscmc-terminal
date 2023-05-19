@@ -16,8 +16,8 @@
     <script type="text/javascript" src="./getInfo.js"></script>
     <div class="tv">
         <div id="terminal">
-        <div class="collection external terminal header">
-            <pre id="header">
+            <div class="collection external terminal header">
+                <pre id="header">
      __  __     ______     ______     __    __     ______                                                                           
     /\ \/\ \   /\  ___\   /\  ___\   /\ "-./  \   /\  ___\                                                                          
     \ \ \_\ \  \ \___  \  \ \ \____  \ \ \-./\ \  \ \ \____                                                                         
@@ -29,36 +29,36 @@
     \ \ \/\ \ \ \ \  \ \ \__ \  \ \ \  \/_/\ \/ \ \  __ \  \ \ \____     \ \ \____  \ \ \/\ \  \ \ \-./\ \  \ \ \-./\ \  \ \___  \  
      \ \____-  \ \_\  \ \_____\  \ \_\    \ \_\  \ \_\ \_\  \ \_____\     \ \_____\  \ \_____\  \ \_\ \ \_\  \ \_\ \ \_\  \/\_____\ 
       \/____/   \/_/   \/_____/   \/_/     \/_/   \/_/\/_/   \/_____/      \/_____/   \/_____/   \/_/  \/_/   \/_/  \/_/   \/_____/  
-            </pre>
-        </div>    
-        <div class="disclaimer">
-            <span class="smallFont">Powered by Weyland-Yutani</span>
-            <span class="xsFont">All electronic messages are subject to scan by USCMC and W-Y personnel</span>
-        </div>  
-        <div class="input">    
-            <FORM style="display: block;" NAME="inputform">
-                <p class="textStyle">Please enter Username</p>
-                <span class="textStyle">$>_</span><INPUT TYPE="text" NAME="uname" VALUE=""/>
-                    <INPUT TYPE="button" NAME="unameButton" class="glitch" Value="Submit" onClick="uName()"/>
-                  <div id="password" style="display: none;">
-                    <p class="textStyle">Please enter password</p>
-                    <span class="textStyle">$>_</span><INPUT TYPE="text" id="pword" NAME="pword" VALUE=""/>
-                    <INPUT TYPE="button" class="glitch" NAME="pwordbutton" Value="Submit" onClick="pWord()"/>
+                </pre>
+            </div>    
+            <div class="disclaimer">
+                <span class="smallFont">Powered by Weyland-Yutani</span>
+                <span class="xsFont">All electronic messages are subject to scan by USCMC and W-Y personnel</span>
+            </div>  
+            <div class="input">    
+                <FORM style="display: block;" NAME="inputform">
+                    <p class="textStyle">Please enter Username</p>
+                    <span class="textStyle">$>_</span><INPUT TYPE="text" NAME="uname" VALUE=""/>
+                        <INPUT TYPE="button" NAME="unameButton" class="glitch button" Value="Submit" onClick="uName()"/>
+                    <div id="password" style="display: none;">
+                        <p class="textStyle">Please enter password</p>
+                        <span class="textStyle">$>_</span><INPUT TYPE="text" id="pword" NAME="pword" VALUE=""/>
+                        <INPUT TYPE="button" class="glitch button" NAME="pwordbutton" Value="Submit" onClick="pWord()"/>
+                    </div>
+                </FORM>
+                <div id="notification" style="display: none;">
+                    <span class="textStyle" id="notify">You have 1 new Electronic Mail Would you like to open it?</span>
+                    <INPUT TYPE="button" class="glitch button" NAME="confirmButton" Value="YES!" onClick="confirmClick('yes')"/>
+                    <INPUT TYPE="button" class="glitch button" NAME="Cancel" Value="NO!" onClick="confirmClick('no')"/>
                 </div>
-            </FORM>
-            <div id="notification" style="display: none;">
-                <span class="textStyle" id="notify">You have 1 new Electronic Mail Would you like to open it?</span>
-                <INPUT TYPE="button" class="glitch" NAME="confirmButton" Value="YES!" onClick="confirmClick('yes')"/>
-                <INPUT TYPE="button" class="glitch" NAME="Cancel" Value="NO!" onClick="confirmClick('no')"/>
+                <div id="email" style="display: none;">
+                    <span class="textStyle" id="fly"></span>
+                </div>
             </div>
-            <div id="email" style="display: none;">
-                <span class="textStyle" id="fly"></span>
-            </div>
+            <div class="flicker"></div>
+            <div class="scanlines"></div>
+            <div class="noise"></div>
         </div>
-        <div class="flicker"></div>
-        <div class="scanlines"></div>
-        <div class="noise"></div>
-    </div>
 </div>
 </body>
 </html>

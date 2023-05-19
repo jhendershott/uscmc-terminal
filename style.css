@@ -13,7 +13,7 @@
     max-width: 100%;
 }
 #terminal {
-    height: 1500px;
+    height: 100%;
 }
 
 .textStyle {
@@ -202,7 +202,7 @@ input[type="text"]
 .scanlines {
     top: 0;
     left: 0;
-    height: 1500px;
+    height: 100%;
     width: 100%;
     background: linear-gradient(
         to bottom,
@@ -256,8 +256,7 @@ input[type="text"]
 }
 /* turn off animation */
 .tv {
-    height: 1500px;
-    position: relative;
+    height: 100%;
 }
 .tv.collapse {
     animation: size 2s ease-out;
@@ -266,7 +265,7 @@ input[type="text"]
 .tv.collapse:before {
     content: '';
     display: block;
-    height: 1500px;
+    height: 100%;
     position: absolute;
     left: 0;
     right: 0;
