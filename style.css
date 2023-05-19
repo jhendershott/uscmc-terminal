@@ -345,7 +345,7 @@ input[type="text"]
     color: #0c7b46;
     position: relative;
     background-color: transparent;
-    animation: glitch 5s 5s infinite;
+    animation: glitch 1s 1s infinite;
   }
   
   .glitch::before {
@@ -356,7 +356,7 @@ input[type="text"]
     background: black;
     overflow: hidden;
     top: 0;
-    animation: noise-1 1s linear infinite alternate-reverse, glitch 3s 3.05s infinite;
+    animation: noise-1 .5s linear infinite alternate-reverse, glitch 1s 1.20s infinite;
   }
   
   .glitch::after {
@@ -367,7 +367,7 @@ input[type="text"]
     background: black;
     overflow: hidden;
     top: 0;
-    animation: noise-2 1s linear infinite alternate-reverse, glitch 3s 3.05s infinite;
+    animation: noise-2 .5s linear infinite alternate-reverse, glitch 1s 1.20s infinite;
   }
   
   @keyframes glitch {
