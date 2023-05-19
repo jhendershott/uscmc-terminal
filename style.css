@@ -28,7 +28,6 @@
 }
 .smallFont {
     margin-left: 20px; 
-    color: grey; 
     font-family: 'VT323';
     overflow-wrap: break-word;
     margin-right: 20px;
@@ -39,7 +38,6 @@
 
 .xsFont {
     margin-left: 20px; 
-    color: grey; 
     font-family: 'VT323';
     overflow-wrap: break-word;
     margin-right: 20px;
@@ -69,6 +67,7 @@
     top: 0; 
     left: 0; 
     right: 0;
+    color: #0c7b46;
 }
 
 .input {
@@ -95,6 +94,7 @@
     top:  250px;; 
     left: 0; 
     right: 0;
+    color: #0c7b46;
 }
 
 textarea:focus, input:focus{
@@ -345,7 +345,7 @@ input[type="text"]
     color: #0c7b46;
     position: relative;
     background-color: transparent;
-    animation: glitch 1s 1s infinite;
+    animation: glitch 3s 3s infinite;
   }
   
   .glitch::before {
@@ -356,7 +356,7 @@ input[type="text"]
     background: black;
     overflow: hidden;
     top: 0;
-    animation: noise-1 .5s linear infinite alternate-reverse, glitch 1s 1.20s infinite;
+    animation: noise-1 1s linear infinite alternate-reverse, glitch 2s 2.20s infinite;
   }
   
   .glitch::after {
@@ -367,7 +367,7 @@ input[type="text"]
     background: black;
     overflow: hidden;
     top: 0;
-    animation: noise-2 .5s linear infinite alternate-reverse, glitch 1s 1.20s infinite;
+    animation: noise-2 1s linear infinite alternate-reverse, glitch 2s 2.20s infinite;
   }
   
   @keyframes glitch {
