@@ -35,14 +35,23 @@ function getInfo(uName, pword){
 
 function uName()
 {
+	unames = ["rchambers", "lsacez", "kgristle", "crogers", "jdrummer", "alouis"];
     uname = document.inputform.uname.value;  
-    var x = document.getElementById('password');
-        if (x.style.display === "none") {
-            x.style.display = "block";
-        } else {
-            x.style.display = "none";
-        }
-    document.getElementById('pword').focus();
+	if(!unames.includes(uname.toLowerCase())){
+		document.inputform.uname.style.display = "none";
+		document.getElementById('notification').value = "Invalid username. Please try again."
+		document.getElementById('notification').style.display = "inline-block";
+	}
+	else
+	{
+		var x = document.getElementById('password');
+			if (x.style.display === "none") {
+				x.style.display = "block";
+			} else {
+				x.style.display = "none";
+			}
+		document.getElementById('pword').focus();
+	}
 }
 
 function pWord()
