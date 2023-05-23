@@ -39,8 +39,11 @@ function uName()
     uname = document.inputform.uname.value;  
 	if(!unames.includes(uname.toLowerCase())){
 		document.inputform.style.display = "none";
-		document.getElementById('notify').value = "Invalid username. Please try again."
+		document.getElementById('confirmButton').style.display = "none";
+		document.getElementById('Cancel').style.display = "none";
+		document.getElementById('notify').innerText = "Invalid username. Please try again."
 		document.getElementById('notification').style.display = "inline-block";
+		document.getElementById('reload').style.display = "inline-block";
 	}
 	else
 	{
