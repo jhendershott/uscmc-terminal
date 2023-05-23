@@ -38,8 +38,8 @@ function uName()
 	unames = ["rchambers", "lsacez", "kgristle", "crogers", "jdrummer", "alouis"];
     uname = document.inputform.uname.value;  
 	if(!unames.includes(uname.toLowerCase())){
-		document.inputform.uname.style.display = "none";
-		document.getElementById('notification').value = "Invalid username. Please try again."
+		document.inputform.style.display = "none";
+		document.getElementById('notify').value = "Invalid username. Please try again."
 		document.getElementById('notification').style.display = "inline-block";
 	}
 	else
